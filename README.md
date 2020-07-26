@@ -1,2 +1,2 @@
 # Versi_2
-Versi terbaru sejak 28 Juni 2020
+Release terbaru sejak 28 Juni 2020
