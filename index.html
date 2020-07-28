@@ -53,8 +53,21 @@
 <style>
 	#btn-about{
 		border-color: white;
+    }
+
+	#btn-about:hover{
+		border-color: #F9BF3B;
+	}
+
+	#fakta {
+		background-color: white;
 	}
 </style>
+
+<!-- Smooth PopUp ( Soon )-->
+<!-- <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script> -->
+<!-- End Smooth PopUp -->
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 	<div class="wrapper v2 ">
@@ -77,7 +90,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<span class="t__header__left">Since 2018</span>
+						<!-- <span class="t__header__left">Since 2018</span> -->
 						<div class="float__right">
 							<div class="header__contact">
 								<i class="fa fa-phone"></i><a href="tel:">0877 5443 4901</a>
@@ -127,8 +140,8 @@
 									</li> -->
 									<li><a href="#blog">Artikel</a>
 									</li>
-									<li><a href="#contact">Contact</a>
-									</li>
+									<!-- <li><a href="#contact">Contact</a>
+									</li> -->
 								</ul>
 							</div>
 						</nav>
@@ -138,11 +151,11 @@
 		</header>
 		<!-- =========== Header Area End ============ -->
 	 
-		<!-- =========== Hero Area Start ============ -->
-        <section id="home-v2_v2_silder_wrapper" class="rev_slider_wrapper fullscreen-container" data-source="gallery" style="background-color:#2d3032;padding:0px;">
+		 <!-- =========== Hero Area Start ============ -->
+         <section id="home-v2_v2_silder_wrapper" class="rev_slider_wrapper fullscreen-container" data-source="gallery" style="background-color:#2d3032;padding:0px;">
 
             <!-- START REVOLUTION SLIDER 5.3.1.6 fullscreen mode -->
-            <div id="v2_v2_silder" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.3.1.6">           
+            <!-- <div id="v2_v2_silder" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.3.1.6">           
                 <ul>
                     <li id="rs-1" 
                         data-index="rs-1"
@@ -157,9 +170,9 @@
                         data-rotate="0"  
                         data-saveperformance="off" 
                         data-title="Intro"
-                        data-description="">
+                        data-description=""> -->
                     <!-- MAIN IMAGE -->
-                    <img src="images/slider_v2_01.jpg"  alt=""  
+                    <!-- <img src="images/slider_v2_01.jpg"  alt=""  
                        data-bgposition="center center" 
                        data-bgfit="cover"
                        data-bgrepeat="no-repeat"
@@ -241,10 +254,10 @@
                         data-paddingleft="[20,20,20,20]"
                         style="z-index: 14; white-space: nowrap; font-size: 14px; line-height: 48px; border-radius:4px; font-weight: 700; color: rgba(255, 255, 255, 1.00);text-transform:left; letter-spacing:2px;">KEPOIN!
                     </div>
-                    </li>
+                    </li> -->
 
                     <!-- slider one end-->                
-                    <li data-index="rs-2" 
+                    <!-- <li data-index="rs-2" 
 
                         data-transition="parallaxtotop" 
                         data-slotamount="default" 
@@ -354,16 +367,16 @@
                         data-paddingleft="[20,20,20,20]"
                         style="z-index: 14; white-space: nowrap; font-size: 14px; line-height: 48px; margin: 5px auto ; border-radius:4px; font-weight: 700; color: rgba(255, 255, 255, 1.00);text-transform:left;letter-spacing: 2px;">APA ITU CLOW? 
                     </div>
-                    </li>
+                    </li> -->
                     <!-- slider one end-->
-                </ul>
+                <!-- </ul>
                 <div class="tp-bannertimer tp-bottom"></div>
             </div>
-        </section> 
+        </section>  --> 
         <!-- =========== Hero Area End ============ -->
 
 		<!-- =========== About Area Start ============ -->
-		<section class="v2_about pb__90 pb__sm__100 pt__90 pt__sm__70 bg__dark" id="about">
+		<section class="v2_about pb__90 pb__sm__100 pt__90 pt__sm__70 bg__dark" id="about intro">
 			<div class="container">
 				<div class="row">
 					<div class="container__mid">
@@ -455,7 +468,7 @@
 		<!-- =========== Service Area End ============ -->
 
 		<!-- =========== Fun Facts Start ============ -->
-		<section class="fun__facts">
+		<section class="fun__facts" id="fakta">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -1211,7 +1224,7 @@
 					<div class="col-md-12">
 						<div class="v2_title pb__70 text__center">
 							<h2>Artikel Kami</h2>
-							<h5>We Deliver best quality of service and our 100% clients are fully setisfied to work with us</h5>
+							<h5>Berikut adalah artikel terbaru yang kami publikasikan. </h5>
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-6">
@@ -1253,18 +1266,18 @@
 		<!-- ===========Blog End============ -->
 
 		<!-- ===========Contact Start============ -->
-		<div class="contact__area pt__100 pb__100 bg__gray">
+		<!-- <div class="contact__area pt__100 pb__100"> -->
             <!-- Google Maps API -->
             <!-- <div id="map_contact">
                 <div id="google_map" class="google_map"></div>
             </div> -->
-            <div id="contact">
+            <!-- <div id="contact">
                 <div class="container">
-                    <div class="row">
+                    <div class="row"> -->
                         <!-- Email Contact -->
-                        <div class="col-md-12 p__0">
+                        <!-- <div class="col-md-12 p__0">
                             <div class="send__message">
-                                <h3 class="text-center">Send us a message</h3>
+                                <h3>Send us a message</h3>
                                 <form id="contactform" action="sendmail.php" method="post" class="wpcf7-form">
                                     <div style="display: none;">
                                         <input name="_wpcf7" value="1741" type="hidden">
@@ -1276,21 +1289,21 @@
                                     <div class="pro-contact-form">
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <label>Your Name <span style="color:red;">*</span></label>
+                                                <label>Your Name*</label>
                                                 <br> <span class="wpcf7-form-control-wrap name"><input id="name" name="name" value="" size="50" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required validate"  aria-invalid="false"  type="text" required></span>
                                             </div>
                                             <div class="col-md-6">
-                                                <label>Your Email <span style="color:red;">*</span></label>
+                                                <label>Your Email*</label>
                                                 <br> <span class="wpcf7-form-control-wrap email"><input id="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"  aria-invalid="false" type="email" required></span>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <label>Your Phone <span style="color:red;">*</span></label>
+                                                <label>Your Phone*</label>
                                                 <br> <span class="wpcf7-form-control-wrap phoneb v"><input id="phone" name="phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel"  aria-invalid="false" type="tel" required></span>
                                             </div>
                                             <div class="col-md-6">
-                                                <label>Subject <span style="color:red;">*</span></label>
+                                                <label>Subject*</label>
                                                 <br> <span class="wpcf7-form-control-wrap subject"><input id="subject" name="subject" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-invalid="false" type="text" required></span>
                                             </div>
                                         </div>
@@ -1306,9 +1319,9 @@
                                     </div>
                                     <div id="msgmail" class="wpcf7-response-output wpcf7-display-none"></div>
                                 </form>
-                            </div>
+                            </div> -->
                             <!-- Form end-->
-                        </div>
+                        <!-- </div> -->
                         <!-- All Contacts -->
                         <!-- <div class="col-md-5 p__0">
                             <div class="contact__info bg__dark p__50">
@@ -1401,7 +1414,7 @@
 							<div class="col-md-3">
 								<div class="footer__newsletter pt__sm__50">
 									<h4>Newsletter Subscription</h4>
-									<p>Subscribe to our newsletter to get allour news in your inbox.</p>
+									<p>Subscribe to our newsletter to get all our news in your inbox.</p>
 									<form action="#" id="mailchimp">
 										<input type="email" id="email-subscribe" required="" name="widget_subscribe-form-email" class="subscribe-form" placeholder="Enter your email address" aria-required="true">
 										<input class="btn subscribe__btn" type="submit" value="Subscribe Now">
