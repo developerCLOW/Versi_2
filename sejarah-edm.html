@@ -50,15 +50,15 @@
 </style>
 
 <!-- Smooth PopUp -->
-<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+<!-- <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script> -->
 <!-- End Smooth PopUp -->
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
     
     <!-- =========== Top Bar Start ============ -->
     <!--top header start-->
-    <div class="top__header bg__dark">
+    <!-- <div class="top__header bg__dark">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -69,7 +69,7 @@
                             <i class="fa fa-envelope"></i><a href="mailto:">caklul.developer@gmail.com</a>
                         </div>
                         <div class="social__icon">
-                            <!-- <a href="#"><i class="fa fa-facebook"></i></a> -->
+                            <a href="#"><i class="fa fa-facebook"></i></a>
                             <a href="https://www.youtube.com/channel/UCxTtIxuHG0k7F7xHLKOs8Fw"><i class="fa fa-youtube"></i></a>
                             <a href="https://www.instagram.com/official.caklul/"><i class="fa fa-instagram"></i></a>
                         </div>
@@ -77,48 +77,39 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!--top header end-->
     <!-- =========== Top Bar End ============ -->
 
     <!-- =========== Header Area Start ============ -->
-    <header class="nav_v2">
+    <header class="nav_v2" style="background-color: black;">
         <div class="container">
             <div class="row">
                 <div class="content">
                     <nav id="navigation6" class="navigation tt-nav navbar navbar-inverse" data-spy="affix" data-offset-top="0">
 
                         <div class="nav-header">
-                            <a class="nav-logo" href="#"> <img src="images/logo-white.png" alt="logo"> </a>
+                            <a class="nav-logo" href="#"> <img src="images/logo.webp" alt="logo"> </a>
                             <div class="nav-toggle"></div>
                         </div>
                         <div class="nav-menus-wrapper">
                             <ul class="nav-menu align-to-right navbar nav">
-                            <!-- <li class="active"><a href="#v2_v2_silder_forcefullwidth">Home</a>
-								</li> -->
-								<li><a href="index.html">Tentang Kami</a>
+                                <li><a href="index.html">Tentang Kami</a>
 								</li>
-								<li><a href="#services">Kategori</a>
+								<li><a href="index.html#services">Kategori</a>
 								</li>
-								<li><a href="#features">Trending</a>
+								<li><a href="index.html#portfolio">Konten</a>
 								</li>
-								<li><a href="#portfolio">Konten</a>
+								<li><a href="index.html#team">Developer</a>
 								</li>
-								<li><a href="#team">Developer</a>
+                                <li class="active"><a href="index.html#blog">Artikel</a>
 								</li>
-								<!-- <li><a href="#pricing">Pricing</a>
-								</li> -->
-								<!-- <li><a href="#testimonial">Testimonial</a>
-								</li> -->
-								<!-- <li><a href="#blog">Blog</a>
-								</li> -->
-								<li><a href="#contact">Contact</a>
 								</li>
-                            </ul>
+                           </ul>
                         </div>
                     </nav>
                 </div>
-            </div>
+            </div> 
         </div>
     </header>
     <!-- =========== Header Area End ============ -->
@@ -127,7 +118,17 @@
     <section class="blog-title sm-device">
         <div class="container">
             <div class="row">
-                <div class="col-md-12" >
+                 <!-- Javascript Back Button -->
+                <div class="col-md-1 col-sm-1 col-xs-1 col-xss-1 text-center">
+                <div
+                    onclick="javascript:history.go(-1)"
+                    class="btn btn-default"
+                    style="font-size: 3rem; cursor: pointer; padding: 0 15px"
+                >
+              ‹
+            </div>
+          </div>
+                <div class="col-md-9" >
                     <div class="text-center">                
                         <h2>Apa itu EDM? </h2>
                         <h5>Kupas Tuntas Awal Mula EDM</h5>
@@ -145,7 +146,7 @@
             <div class="row">
                 <div class="col-md-8">
                     <div class="single-post">
-                        <img src="images/edm-1.jpg" alt="">
+                        <img src="images/Artikel/Apa itu EDM/edm-1.webp" alt="">
                         <h3><a href="#">Apa sih Sebenernya EDM?</a></h3>
                         <p>EDM atau Electronic Dance Music adalah gendre music yg digemari oleh kalangan millennial saat ini. </p>
                         <p>Genre EDM ini biasanya dimainkan oleh seorang DJ(Disc Jockey) di sebuah club,festival dan lain-lain.</p>
@@ -187,11 +188,9 @@
                     <!-- post text end-->
                 <div class="post-bottom-info overflow-hidden">
                    <ul class="catag">
-                   <li>Category:</li>
-                   <!-- Isikan Sesuai Kategorinya! Jika ada 2 Kategori, Nyalakan <li> Dibawahnya -->
-                   <li><a href="#">Music</a></li>
-                   <!-- <li><a href="#">web,</a></li>
-                   <li><a href="#">ui/ux</a></li> -->
+                        <li>Category:</li>
+                        <!-- Isikan Sesuai Kategorinya! Jika ada 2 Kategori, Nyalakan <li> Dibawahnya -->
+                        <li><a href="#">Music</a></li>
                     </ul>
                    <ul class="catag">
                    <li>Tags:</li>
@@ -250,80 +249,101 @@
     <!-- =========== Footer Area Start ============ -->
     <footer class="footer">
         <div class="pb__100 pt__100 bg__dark pb__sm__80 pt__sm__80">
-            <div class="container">
-                <div class="row">
-                    <div class="container__mid flex__sm__col">
-                        <div class="col-md-3">
-                            <div class="footer__brand pb__sm__50">
-                                <img src="images/logo.png" alt="logo">
-                                <p>Cak Lul Official Website merupakan Komunitas Website yang bertujuan untuk mengembankan keterampilan tiap developer dan orang lain dengan baik di bidang website maupun lainnya.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- footer brand end-->
-                        <div class="col-md-2 col-md-offset-1 col-sm-6">
-                            <div class="footer__widget widget__one">
-                                <!-- <h4>Important Links</h4>
-                                <ul>
-                                    <li><a href="#">Subscribe</a>
-                                    </li>
-                                    <li><a href="#">Privacy</a>
-                                    </li>
-                                    <li><a href="#">Legal</a>
-                                    </li>
-                                    <li><a href="#">Sitemap</a>
-                                    </li>
-                                    <li><a href="#">Terms of Use</a>
-                                    </li>
-                                </ul> -->
-                            </div>
-                            <!-- widget-1 end-->
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="footer__widget">
-                                <!-- <h4>Quick Links</h4>
-                                <ul>
-                                    <li><a href="#">Industry Expertise</a>
-                                    </li>
-                                    <li><a href="#">Consulting Services</a>
-                                    </li>
-                                    <li><a href="#">Publications</a>
-                                    </li>
-                                    <li><a href="#">About Foxy</a>
-                                    </li>
-                                    <li><a href="#">Get in Touch</a>
-                                    </li>
-                                </ul> -->
-                            </div>
-                            <!-- widget-2 end-->
-                        </div>
-                        <div class="col-md-3">
-                            <div class="footer__newsletter pt__sm__50">
-                                <h4>Newsletter Subscription</h4>
-                                <p>Subscribe to our newsletter to get allour news in your inbox.</p>
-                                <form action="#" id="mailchimp">
-                                    <input type="email" id="email-subscribe" required="" name="widget_subscribe-form-email" class="subscribe-form" placeholder="Enter your email address" aria-required="true">
-                                    <input class="btn subscribe__btn" type="submit" value="Subscribe Now">
-                                </form>
-                                <span><i class="fa fa-lock">&thinsp; &thinsp;</i>Your email address is 100% safe to us.</span>
-                            </div>
-                            <div class="sub-confirmation" id="nconfirmation"></div>
-                            <!-- newsletter end-->
-                        </div>
-                    </div>
-                    <!-- end of row-->
+          <div class="container">
+            <div class="row">
+              <div class="container__mid flex__sm__col">
+                <div class="col-md-4">
+                  <div class="footer__brand pb__sm__50">
+                    <img src="images/logo.webp" alt="logo" />
+                    <p>
+                      Cak Lul Official Website merupakan Komunitas Website yang
+                      bertujuan untuk mengembankan keterampilan tiap developer dan
+                      orang lain dengan baik di bidang website maupun lainnya.
+                    </p>
+                  </div>
                 </div>
+                <!-- footer brand end-->
+                <div class="col-md-2 col-md-offset-1 col-sm-6">
+                  <div class="footer__widget widget__one">
+                    <!-- <h4>Important Links</h4>
+                                  <ul>
+                                      <li><a href="#">Subscribe</a>
+                                      </li>
+                                      <li><a href="#">Privacy</a>
+                                      </li>
+                                      <li><a href="#">Legal</a>
+                                      </li>
+                                      <li><a href="#">Sitemap</a>
+                                      </li>
+                                      <li><a href="#">Terms of Use</a>
+                                      </li>
+                                  </ul> -->
+                  </div>
+                  <!-- widget-1 end-->
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="footer__widget">
+                    <!-- <h4>Quick Links</h4>
+                                  <ul>
+                                      <li><a href="#">Industry Expertise</a>
+                                      </li>
+                                      <li><a href="#">Consulting Services</a>
+                                      </li>
+                                      <li><a href="#">Publications</a>
+                                      </li>
+                                      <li><a href="#">About Foxy</a>
+                                      </li>
+                                      <li><a href="#">Get in Touch</a>
+                                      </li>
+                                  </ul> -->
+                  </div>
+                  <!-- widget-2 end-->
+                </div>
+                <!-- <div class="col-md-3">
+                  <div class="footer__newsletter pt__sm__50">
+                    <h4>Newsletter Subscription</h4>
+                    <p>
+                      Subscribe to our newsletter to get allour news in your
+                      inbox.
+                    </p>
+                    <form action="#" id="mailchimp">
+                      <input
+                        type="email"
+                        id="email-subscribe"
+                        required=""
+                        name="widget_subscribe-form-email"
+                        class="subscribe-form"
+                        placeholder="Enter your email address"
+                        aria-required="true"
+                      />
+                      <input
+                        class="btn subscribe__btn"
+                        type="submit"
+                        value="Subscribe Now"
+                      />
+                    </form>
+                    <span
+                      ><i class="fa fa-lock">&thinsp; &thinsp;</i>Your email
+                      address is 100% safe to us.</span
+                    >
+                  </div>
+                  <div class="sub-confirmation" id="nconfirmation"></div> -->
+                  <!-- newsletter end-->
+                </div>
+              </div>
+              <!-- end of row-->
             </div>
+          </div>
         </div>
         <div class="footer_bottom pb-10 pt-30">
-            <div class="container">
-                <div class="text__center p__20">
-                    <p>© 2018 <a href="#">Cak Lul Tech </a> All Rights Reserved.</p>
-                </div>
+          <div class="container">
+            <div class="text__center p__20">
+              <p>© 2018 <a href="#">Cak Lul Media </a> All Rights Reserved.</p>
             </div>
+          </div>
         </div>
         <!-- end of container-->
-    </footer>
+      </footer>
     <!-- =========== Footer Area End ============ -->
 
     <!-- jquery -->
