@@ -10,6 +10,7 @@
 	<meta name="author" content="https://themeforest.net/user/pixitives">
 
 	<title>CLOW | Homepage</title>
+	
 
 	<!--  favicon -->
 	<link rel="shortcut icon" href="images/favicon.webp">
@@ -66,6 +67,22 @@
 		margin	: 0;
 		padding	: 0;
 	}
+	#tengah {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            height: 0;
+            z-index: 4000;
+            display: none;
+            text-align: center;
+	}
+	#tclose{
+		color: white; 
+		background-color: orange;	
+		font-size: 20px;
+		cursor: pointer;;
+	}
 </style>
 
 <!-- Smooth PopUp -->
@@ -79,7 +96,7 @@
 	<div class="wrapper v2 ">
 
 		<!-- =========== Preloader Start ============ -->
-		<!-- <div class="preloader">
+		<div class="preloader">
 			<div class="preloader-inner-area">
 				<div class="loader-overlay">
 					<div class="l-preloader">
@@ -87,8 +104,14 @@
 					</div>
 				</div>
 			</div>
-		</div> -->
+		</div>
 		<!-- =========== Preloader End ============ -->
+
+		<div id="tengah">
+			<div><img src="images/photo6113978498562501258.jpg" width="100%" style="margin-top: 40px; animation-duration: 4s;" alt="Happy Birthday">
+			</div>
+			<div id="tclose">Klik Untuk Menutup</div>
+		</div>
 
 		<!-- =========== Top Bar Start ============ -->
 		<!--top header start-->
@@ -134,20 +157,13 @@
 									</li>
 									<li><a href="#services">Kategori</a>
 									</li>
-									<!-- <li><a href="#features">Trending</a> -->
 									</li>
 									<li><a href="#portfolio">Konten</a>
 									</li>
 									<li><a href="#team">Developer</a>
 									</li>
-									<!-- <li><a href="#pricing">Pricing</a>
-									</li> -->
-									<!-- <li><a href="#testimonial">Testimonial</a>
-									</li> -->
 									<li><a href="#blog">Artikel</a>
 									</li>
-									<!-- <li><a href="#contact">Contact</a>
-									</li> -->
 								</ul>
 							</div>
 						</nav>
@@ -382,15 +398,15 @@
         <!-- =========== Hero Area End ============ -->
 
 		<!-- =========== About Area Start ============ -->
-		<section class="v2_about pb__90 pb__sm__100 pt__90 pt__sm__70 bg__dark" id="about intro">
+		<section class="v2_about pb__90 pb__sm__100 pt__90 pt__sm__70 bg__dark" id="about">
 			<div class="container">
 				<div class="row">
 					<div class="container__mid">
-						<div class="col-md-6 col-md-push-6 horizon" data-animate-in="transY:-150px;duration:1000ms;">
-							<img src="images/CLOW.webp" alt="CLOW">
+						<div class="col-md-6 col-md-push-6 " data-animate-in="transY:-150px;duration:1000ms;">
+							<img src="images/CLOW.webp" alt="CLOW" id="CLOW">
 						</div>
 						<div class="col-md-5 col-md-pull-7">
-							<div class="about_title text-left horizon" data-animate-in="transY:150px;duration:1000ms;">
+							<div class="about_title text-left " data-animate-in="transY:150px;duration:1000ms;">
 								<!-- Warna kurang cocok :) -->
 								<h2 style="color: white;">Cak Lul Official Website</h2>
 								<h3 style="color: #F9BF3B;">Komunitas Website pertama di Smenda sejak 2018</h3>
@@ -402,6 +418,17 @@
 				</div>
 			</div>
 		</section>
+
+		<!-- ======= Animation with Javascript ========-->
+
+		<script>
+			let logo = document.getElementById('CLOW');
+
+			
+			logo.addEventListener('click', function() {
+				logo.style.rotate = '360';	
+			});
+		</script>
 
 		<!-- =========== Service Area Start ============ -->
 		<section class="v2_service service_2 pt__90 pb__100 pt__sm__70 pb__sm__40 bg__gray" id="services">
@@ -624,10 +651,12 @@
 											<img src="images/Konten/Youtube/Youtube-1.webp" alt="img">
 										</div>
 										<figcaption>
-											<div class="fig__caption">
-												<a class="venobox" data-vbtype="youtube" data-autoplay="true" href="https://www.youtube.com/watch?v=gAOL-O9mN_o"><i class="fa fa-play-circle"></i></a>
-												<h3>Project Title</h3>
-												<p>Video Lightbox</p>
+											<div class="">
+												<a class="venobox" data-vbtype="youtube" data-autoplay="true" href="https://www.youtube.com/watch?v=gAOL-O9mN_o"></a>
+												<h3>Menghadapi New Normal</h3>
+												<p>Setelah beberapa lama #diRumahAja,</p>
+												<br>
+												<p>Gimana sih keadaan diluar sana?</p>
 											</div>
 										</figcaption>
 									</figure>
@@ -879,7 +908,7 @@
 									<img src="images/developer-image/cak lul.webp" alt="img">
 									<div class="v2__team__content">
 										<h4>Muhammad Syahrul Afandi</h4>
-										<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+										<p>Nothing Last Forever! </p>
 										<div class="team__social">
 											<a href="https://www.facebook.com/caklul.cipluk"><i class="fa fa-facebook"></i></a>
 											<a href="https://www.instagram.com/syahrulcipluk"><i class="fa fa-instagram"></i></a>
@@ -895,7 +924,7 @@
 									<img src="images/developer-image/enrique.webp" alt="img">
 									<div class="v2__team__content">
 										<h4>Moch Enrique Lazuardi R</h4>
-										<p>Menjaga komitmen itu sulit. Namun, Hasilnya akan Luar biasa!</p>
+										<p>Use your time wisely! </p>
 										<div class="team__social">
 											<a href="https://www.facebook.com/moch.e.ramadhani"><i class="fa fa-facebook"></i></a>
 											<a href="https://www.instagram.com/ricoenrique25/"><i class="fa fa-instagram"></i></a>
@@ -925,7 +954,7 @@
 									<img src="images/developer-image/bichan.webp" alt="img">
 									<div class="v2__team__content">
 										<h4>Qolbi Adi Lumintang</h4>
-										<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+										<p>Jadilah apa yang kamu inginkan, Asalkan tidak lari dari esensi.</p>
 										<div class="team__social">
 											<a href="https://www.facebook.com/qolbi.lumintang"><i class="fa fa-facebook"></i></a>
 											<a href="https://www.instagram.com/beee.chan/"><i class="fa fa-instagram"></i></a>
@@ -941,7 +970,7 @@
 									<img src="images/developer-image/ananta.webp" alt="img">
 									<div class="v2__team__content">
 										<h4>Ananta Nabila S</h4>
-										<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+										<p>Go to the Hell in the dark!</p>
 										<div class="team__social">
 											<div class="team__social">
 												<a href="https://www.facebook.com/people/Ananta-Nanta/100009467094454"><i class="fa fa-facebook"></i></a>
@@ -959,7 +988,7 @@
 									<img src="images/developer-image/kharis.webp" alt="img">
 									<div class="v2__team__content">
 										<h4>Abdul Kharis Ardiansyah</h4>
-										<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+										<p>Life is Pass</p>
 										<div class="team__social">
 											<a href="https://www.facebook.com/abdul.kharis.108889"><i class="fa fa-facebook"></i></a>
 											<a href="https://www.instagram.com/abdul.arris/"><i class="fa fa-instagram"></i></a>
@@ -990,7 +1019,7 @@
 									<img src="images/developer-image/alfandityo.webp" alt="img">
 									<div class="v2__team__content">
 										<h4>Alfandityo</h4>
-										<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+										<p>Ngedoujin adalah candu</p>
 										<div class="team__social">
 											<a href="https://www.facebook.com/alfandityo.fafa"><i class="fa fa-facebook"></i></a>
 											<a href="https://www.instagram.com/alfandityo_chan/"><i class="fa fa-instagram"></i></a>
@@ -1250,11 +1279,14 @@
 					<!-- single item end -->
 					<div class="col-md-4 col-sm-6">
 						<div class="blog__post text__center">
-							<img class="mb__30" src="images/Artikel/example article/blog-2.webp" alt="">
+							<img class="mb__30" src="images/Artikel/Genre EDM - Progressive House/1.webp" alt="">
 							<span class="post__info pb__10">4 days ago</span>
-							<a href="single-blog.html"><h3>Famous onepage template of the year</h3></a>
+							<a href="genre-edm-progressive-house.html"><h3>Genre EDM - Progressive House</h3></a>
 							<hr>
-							<p>Lorem ipsum dolor sit amet, consectetur pisicing elit. Vero saepe expedita similique veritatis repudiandae nulla by me!</p>
+							<p> Hallo… Kembali lagi dengan artikel EDM ,nah sekarang kami akan
+								membahas apa aja sih genre-genre nya? Mari kita bahas mulai dari
+								<i>Progressive House</i> dulu yaa? Yuk kita simak
+								penjelasannya…..</p>
 							 <a class="read__more" href="single-blog.html">Read more</a>
 						</div>
 					</div>
@@ -1432,7 +1464,7 @@
 									<span><i class="fa fa-lock">&thinsp; &thinsp;</i>Your email address is 100% safe to us.</span>
 								</div>
 								<div class="sub-confirmation" id="nconfirmation"></div>
-								<!-- newsletter end
+								newsletter end
 							</div> -->
 						</div>
 						<!-- end of row-->
@@ -1460,6 +1492,16 @@
 			swal("Selamat datang di Cak Lul Official Website","<br>Nikmati Performa cepat di versi Desktop! <br>", "success");
 		</script> -->
 
+		<!-- Popup -->
+		<script>
+			$(document).ready(function(){
+				$("#tengah").modal("show");
+				$("#tclose").click(function(){
+					$("#tengah").modal("hide");
+				});
+			});
+		</script>
+		
 		<!-- bootstrap js -->
 		<script src="js/bootstrap.min.js"></script>
 
