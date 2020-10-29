@@ -68,12 +68,18 @@
 		padding	: 0;
 	}
 	#tengah {
-			height: 50%;
             position: fixed;
-            top: 50%;
-            left: 50%;
 			z-index: 4000;
-			transform: translate(-50%,-50%);
+			transform: translate(3%,10%);
+	}
+
+	@media (max-width:450px) {
+		#tengah {
+			height: 50%;
+			position: fixed;
+			z-index: 4000;
+			transform: translate(6%,10%);
+		}
 	}
 	#tclose{
 		color: white; 
