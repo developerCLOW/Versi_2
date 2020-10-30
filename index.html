@@ -190,6 +190,7 @@
 								<p  style="color: white;">Merupakan Komunitas Website yang bertujuan untuk mengembankan keterampilan tiap developer dan kontributor dengan baik di bidang mereka. Selain itu kami membuat beberapa konten kreatif! Cek dibawah ini!</p>
 								<a class="btn about__btn" href="#portfolio" style="color: white;" id="btn-about">Lihat konten kami</a>
 							</div>
+							<div id="audio"></div>
 						</div>
 					</div>
 				</div>
@@ -204,18 +205,18 @@
 			const gambar = document.getElementById('wadah');
 			
 			logo.addEventListener('click',function() {
-				logo.style.transition = "5s";
-				logo.style.transform  = "rotate(10800deg)";
-				logo.style.opacity	  = "0";
+				logo.style.transition 	= "5s";
+				logo.style.transform  	= "rotate(10800deg)";
+				logo.style.opacity	  	= "0";
 				gambar.style.transition = '4s';
 				gambar.style.opacity	= "0";
 
 				setTimeout(function () {
-					gambar.innerHTML = '<img src="images/logo.webp" alt="anjim">';
+					gambar.innerHTML = '<div><audio src="audio/Role Reveal Among Us Sound Effect.mp3" autoplay="autoplay"></audio><img src="images/CLOW baru.png" style="transform: translate(0%,-10%)" alt="anjim"></div>';
 					gambar.style.opacity = '1';
 				}, 7000);
 			});
-			
+		
 		</script>
 
 		<!-- =========== Service Area Start ============ -->
