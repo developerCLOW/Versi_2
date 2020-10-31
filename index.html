@@ -1279,8 +1279,10 @@
 		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
 		<script>
-			document.querySelector(".third")
-			swal("Tidak Disarankan Menggunakan Handphone","<br> Untuk Performa lebih baik, Silahkan gunakan laptop / PC <br>", "error");
+			if (window.matchMedia("(max-width: 720px)").matches) {
+				document.querySelector(".third")
+				swal("Tidak Disarankan Menggunakan Handphone","<br> Untuk Performa lebih baik, Silahkan gunakan laptop / PC <br>", "error");
+			 }
 		</script>
 
 		<!-- Popup -->
