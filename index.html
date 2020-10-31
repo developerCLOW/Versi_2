@@ -68,6 +68,7 @@
 		padding	: 0;
 	}
 	#tengah {
+			width: 95.5%;
             position: fixed;
 			z-index: 4000;
 			transform: translate(3%,10%);
@@ -108,11 +109,14 @@
 		</div>
 		<!-- =========== Preloader End ============ -->
 
+		<!-- Pop Up Banner -->
 		<div id="tengah">
+			<a href="https://info.flagcounter.com/sP3C"><img src="https://s11.flagcounter.com/count2/sP3C/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_4/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0" style="margin-bottom: 50px;" id="Hitung"></a>
 			<div><img src="images/popup.jpg" width="100%"  style="transition : 4s;" alt="Happy Birthday"></div>
 			<div id="tclose">Klik Disini untuk Menutup</div>
 		</div>
-		
+		<!-- End Pop Up Banner -->
+
 
 		<!-- =========== Top Bar Start ============ -->
 		<!--top header start-->
@@ -197,8 +201,9 @@
 			</div>
 		</section>
 
-		<!-- ======= Animation with Javascript ========-->
+	
 
+		<!-- ======= Animation with Javascript ========-->
 		<script>
 			const wadah	 = document.getElementById('wadah');
 			const logo 	 = document.getElementById('CLOW');
@@ -1275,21 +1280,25 @@
 		<!-- jquery -->
 		<!-- <script src="js/jquery-2.1.4.min.js"></script> -->
 
-		<!-- Updates JQuery to New Version -->
+		<!-- Updates JQuery to New Version -->	
 		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
 		<script>
-			if (window.matchMedia("(max-width: 720px)").matches) {
+			 if (window.matchMedia("(max-width: 720px)").matches) {
 				document.querySelector(".third")
 				swal("Tidak Disarankan Menggunakan Handphone","<br> Untuk Performa lebih baik, Silahkan gunakan laptop / PC <br>", "error");
 			 }
+
+			 
 		</script>
 
-		<!-- Popup -->
 		<!-- Popup -->
 		<script>
 			const close  = document.getElementById("tclose");
 			const tengah = document.getElementById("tengah");
+			const hitung = document.getElementById("Hitung");
+			hitung.style.display = 'none';
+
 
 			if (sessionStorage.getItem("CLOW") == 'Banner'){
 				tengah.style.display = "none";
