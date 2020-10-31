@@ -1286,13 +1286,22 @@
 		</script>
 
 		<!-- Popup -->
+		<!-- Popup -->
 		<script>
-			$(document).ready(function(){
-				$("#tengah").modal("show");
-				$("#tclose").click(function(){
-					$("#tengah").modal("hide");
-				});
+			const close  = document.getElementById("tclose");
+			const tengah = document.getElementById("tengah");
+
+			if (sessionStorage.getItem("CLOW") == 'Banner'){
+				tengah.style.display = "none";
+			}
+
+			close.addEventListener("click",function() {
+				tengah.style.display = "none";
+
+				// Create a Session Storage for Banner doesn't appear than 1
+				sessionStorage.setItem("CLOW", "Banner");
 			});
+
 		</script>
 		
 		<!-- bootstrap js -->
